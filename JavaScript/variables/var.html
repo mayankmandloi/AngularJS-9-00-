@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-variable hoisting is to take declaration on the top of scope
-  </body>
-  <script type="text/javascript">
-  "use strict";
-    var a = 10 ;
-    console.log(a);
-    window.alert(b);
-    var b=14;
-  </script>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+  variable hoisting is to take declaration on the top of scope
+</body>
+<script type="text/javascript">
+"use strict"
+/*a=10
+b=20
+c="Web Bhumi"
+console.log(a)
+console.log(b)
+console.log(c)*/
+function functionName() {
+  var a = 20;//local
+  b=30;//global
+  console.log(a);
+  console.log(b);
+}
+functionName();
+
+console.log(a);
+console.log(b);
+</script>
 </html>
