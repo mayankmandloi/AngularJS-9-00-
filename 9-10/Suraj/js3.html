@@ -16,18 +16,27 @@
  	  var b = parseInt(window.prompt("Enter A Number"));
  	  var c = parseInt(window.prompt("Enter A Number"));
 */
-	var a = document.getElementById("number1").value;
-	var b = document.getElementById("number2").value;
-	var c = document.getElementById("number3").value;
+	var a = parseInt(document.getElementById("number1").value);
+	var b = parseInt(document.getElementById("number2").value);
+	var c = parseInt(document.getElementById("number3").value);
 
- 	  if (a>b && a>c) {
+    if (a==b && b==c){
+ 	  	document.getElementById("result").innerHTML= "a, b and c are equel"
+	   }
+	   else if(a==b  && a>c && b>c) {
+ 	  	document.getElementById("result").innerHTML= "a and b is equel and largest than c"
+	   }
+	   	else if(c==b && c>a && b>a) {
+ 	  	document.getElementById("result").innerHTML= "b and c is equel and largest than a"
+	   }
+	   else if(a==c && a>b && c>b) {
+ 	  	document.getElementById("result").innerHTML= "a and c is equel and largest than b"
+	   }
+ 	   else  if (a>b && a>c) {
  	  	document.getElementById("result").innerHTML= "a is largest than b and c"
  	  }
  	  else if (b>a && b>c) {
  	  	document.getElementById("result").innerHTML= "b is largest than a and c"
- 	  }
- 	  else if (a==b && b==c){
- 	  	document.getElementById("result").innerHTML= "a, b and c are equel"
  	  }
  	  else {
  	  	document.getElementById("result").innerHTML= "c is largest than a and b"
