@@ -5,22 +5,25 @@
  </head>
  <body>
 
- <button onclick="myFunction()">Click Here</button>
+ <input type="text" id="number1" name="">
+ <input type="text" id="number2" name="">
+ <a style="background-color: #000; padding: 7px 20px;cursor: pointer;color: #fff;" onclick="myFunction()">Click Here</a>
+ <h1 id="result"></h1>
 
  </body>
  <script type="text/javascript">
  function myFunction(){
- 	  var a = parseInt(window.prompt("Enter A Number"));;
- 	  var b = parseInt(window.prompt("Enter A Number"));
+ 	  var a = document.getElementById("number1").value;
+ 	  var b = document.getElementById("number2").value;
 
  	  if (a>b) {
- 	  	document.write("<h1>a is largest than b</h1>");
+ 	  	document.getElementById("result").innerHTML = "a is largest than b"
  	  }
  	  else if (a==b) {
- 	  	document.write("<h1>a and b is equal</h1>");
+ 	  	document.getElementById("result").innerHTML = "a and b is equal"
  	  }
  	  else {
-       document.write("<h1>a is less than b</h1>");
+ 	  	document.getElementById("result").innerHTML = "a is less than b"
  	  }
 }
 
