@@ -11,14 +11,16 @@
 
 var a  = parseInt(window.prompt("Enter your first number"));
 var b  = parseInt(window.prompt("Enter your second number"));
-    if(a>=b)
+  if(a>b)
     {
-      document.write("<h1>a is largest than b</h1>");
+      document.write("<h1>a is larger than b</h1>");
     }
-    else {
-      document.write("<h1>a is smallest than b</h1>");
+    else if(a==b) {
+      document.write("<h1>a is equal b</h1>");
     }
-
+   else  {
+      document.write("<h1>a is smaller than b</h1>");
+    }
 
 
   </script>
