@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ </head>
+ <body>
+ <a style="background-color: #000; padding: 7px 20px;cursor: pointer;color: #fff;" onclick="myFunction()">Click Here</a>
+ <h1 id="result"></h1>
+ </body>
+ <script type="text/javascript">
+ function myFunction(){
+ 	 /* var a = parseInt(window.prompt("Enter A Number"));;
+ 	  var b = parseInt(window.prompt("Enter A Number"));
+ 	  var c = parseInt(window.prompt("Enter A Number"));
+*/
+	var a = parseInt(window.prompt("Enter A Number"));
+	var b = parseInt(window.prompt("Enter A Number"));
+	var c = parseInt(window.prompt("Enter A Number"));
+
+    if (a==b && b==c){
+ 	  	document.getElementById("result").innerHTML= "a, b and c are equel"
+	   }
+	   else if(a==b  && a>c && b>c) {
+ 	  	document.getElementById("result").innerHTML= "a and b is equel and largest than c"
+	   }
+	   	else if(c==b && c>a && b>a) {
+ 	  	document.getElementById("result").innerHTML= "b and c is equel and largest than a"
+	   }
+	   else if(a==c && a>b && c>b) {
+ 	  	document.getElementById("result").innerHTML= "a and c is equel and largest than b"
+	   }
+ 	   else  if (a>b && a>c) {
+ 	  	document.getElementById("result").innerHTML= "a is largest than b and c"
+ 	  }
+ 	  else if (b>a && b>c) {
+ 	  	document.getElementById("result").innerHTML= "b is largest than a and c"
+ 	  }
+ 	  else {
+ 	  	document.getElementById("result").innerHTML= "c is largest than a and b"
+ 	  }
+}
+
+ </script>
+ </html>
