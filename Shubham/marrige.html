@@ -1,4 +1,49 @@
-<<<<<<< HEAD
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+
+  <label for="gender1">Male</label><input type="radio" name="gender" value="male" id="gender1">
+  <label for="gender2">Female</label><input type="radio" name="gender" value="female" id="gender2">
+  <br>
+  <input type="number" name="age" value="" min="18" id="age">
+  <br>
+  <button type="button" name="button" onclick="clickMe()">Submit</button>
+
+    <script>
+    function clickMe() {
+
+      if(document.getElementById("gender1").checked)
+      {
+        var gender = document.getElementById("gender1").value;
+      }
+      else {
+        var gender = document.getElementById("gender2").value;
+      }
+      var age = document.getElementById("age").value*1;
+        if (gender == "male") {
+
+          if (age >= 21) {
+              console.log("boy is eligible for marrige")
+          } else {
+              console.log("boy is not eligible");
+          }
+
+      } else if (gender == "female") {
+          if (age >= 18) {
+              console.log("girl is eligible for marrige")
+          } else {
+              console.log("girl is not eligible");
+          }
+      }
+    }
+    </script>
+</body>
+
+======= <!--
 <html>
 
 <head>
@@ -27,36 +72,6 @@
     }
     </script>
 </body>
-
-=======
-<html>
-
-<head>
-    <title></title>
-</head>
-
-<body>
-    <script>
-    var gender = "male",
-        age = 21;
-
-    if (gender == "male") {
-
-        if (age >= 21) {
-            console.log("boy is eligible for marrige")
-        } else {
-            console.log("boy is not eligible");
-        }
-
-    } else if (gender == "female") {
-        if (age >= 18) {
-            console.log("girl is eligible for marrige")
-        } else {
-            console.log("girl is not eligible");
-        }
-    }
-    </script>
-</body>
-
+-->
 >>>>>>> 106ad0ef1340533516dba43af9a29d70b4264ae7
 </html>
