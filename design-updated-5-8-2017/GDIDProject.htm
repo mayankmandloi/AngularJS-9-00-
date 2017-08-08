@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html style="" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths gr__localhost"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Maintenance | Gauteng Provincial Government</title>
+    <link href="GDIDProject_files/jquery-ui-bootstrap.css" rel="stylesheet">
+<link href="GDIDProject_files/bootstrap.css" rel="stylesheet">
+<link href="GDIDProject_files/bootstrap-switch.css" rel="stylesheet">
+<link href="GDIDProject_files/components.css" rel="stylesheet">
+<link href="GDIDProject_files/custom.css" rel="stylesheet">
+<link href="GDIDProject_files/daterangepicker-bs3.css" rel="stylesheet">
+<link href="GDIDProject_files/default.css" rel="stylesheet">
+<link href="GDIDProject_files/font-awesome.css" rel="stylesheet">
+<link href="GDIDProject_files/fullcalendar.css" rel="stylesheet">
+<link href="GDIDProject_files/jquery.css" rel="stylesheet">
+<link href="GDIDProject_files/jqvmap.css" rel="stylesheet">
+<link href="GDIDProject_files/layout.css" rel="stylesheet">
+<link href="GDIDProject_files/plugins.css" rel="stylesheet">
+<link href="GDIDProject_files/simple-line-icons.css" rel="stylesheet">
+<link href="GDIDProject_files/tasks.css" rel="stylesheet">
+<link href="GDIDProject_files/uniform.css" rel="stylesheet">
+<link href="GDIDProject_files/site.css" rel="stylesheet">
+<link href="GDIDProject_files/bootstrap-yii.css" rel="stylesheet">
+
+    <script src="GDIDProject_files/modernizr-2.js"></script>
+
+
+<style type="text/css" id="notify-bootstrap">.notifyjs-bootstrap-base {
+  font-weight: bold;
+  padding: 8px 15px 8px 14px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  white-space: nowrap;
+  padding-left: 25px;
+  background-repeat: no-repeat;
+  background-position: 3px 7px;
+}
+.notifyjs-bootstrap-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border-color: #EED3D7;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border-color: #D6E9C6;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+}
+.notifyjs-bootstrap-info {
+  color: #3A87AD;
+  background-color: #D9EDF7;
+  border-color: #BCE8F1;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+}
+.notifyjs-bootstrap-warn {
+  color: #C09853;
+  background-color: #FCF8E3;
+  border-color: #FBEED5;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+}
+</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style><style type="text/css" id="core-notify">.notifyjs-corner {
+  position: fixed;
+  margin: 5px;
+  z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+  position: relative;
+  display: block;
+  height: inherit;
+  width: inherit;
+  margin: 3px;
+}
+
+.notifyjs-wrapper {
+  z-index: 1;
+  position: absolute;
+  display: inline-block;
+  height: 0;
+  width: 0;
+}
+
+.notifyjs-container {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+}
+
+[data-notify-text],[data-notify-html] {
+  position: relative;
+}
+
+.notifyjs-arrow {
+  position: absolute;
+  z-index: 2;
+  width: 0;
+  height: 0;
+}</style></head>
+<body class="page-boxed page-header-fixed page-sidebar-closed-hide-logo page-container-bg-solid page-sidebar-closed-hide-logo" data-gr-c-s-loaded="true">
+
+
+
+    <div class="page-header navbar navbar-fixed-top">
+        <!-- BEGIN HEADER INNER -->
+        <div class="page-header-inner container">
+            <!-- BEGIN LOGO -->
+            <div class="page-logo">
+                <div class="menu-toggler sidebar-toggler">
+                    <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
+                </div>
+            </div>
+            <!-- END LOGO -->
+            <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+            </a>
+            <!-- END RESPONSIVE MENU TOGGLER -->
+            <!-- BEGIN PAGE TOP -->
+            <div class="page-top">
+              <ul class="list-inline">
+                <li><img src="GDIDProject_files/logo-default.png" alt="logo" class="logo-default img-responsive"></li>
+                 <li class="material_headsec"> <label for="Material_Management_System" class="material_heading">Material Management System</label> </li>
+                 <li class="dropdown">
+                   <a href="#">
+                      <i class="fa fa-bell" aria-hidden="true"></i>
+                   </a>
+                  <ul class="nast-ul">
+                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </li>
+                  </ul>
+                 </li>
+                 <li class="pull-right"><a id="aLogout111" class="btn btn-info logout_btn" href="http://localhost:59285/StartApp/Index"><span class="fa fa-lock"></span> Logout</a></li>
+                </ul>
+
+
+                <!-- END TOP NAVIGATION MENU -->
+            </div>
+            <!-- END PAGE TOP -->
+        </div>
+        <!-- END HEADER INNER -->
+    </div>
+    <div class="clearfix">
+    </div>
+
+
+    <div class="container">
+        <div class="page-container">
+            <!-- BEGIN SIDEBAR -->
+            <div class="page-sidebar-wrapper">
+                <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+                <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+                <div class="page-sidebar navbar-collapse collapse">
+                    <!-- BEGIN SIDEBAR MENU -->
+                   <ul class="page-sidebar-menu page-sidebar-menu-hover-submenu " data-auto-scroll="true" data-slide-speed="200">
+                        <li class="start active ">
+                            <a href="http://localhost:59285/Home/Index">
+                                <i class="fa fa-home"></i>
+                                <span class="title">Dashboard</span>
+                                <span class="selected"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="http://localhost:59285/Defect/DefectList">
+                                <i class="fa fa-warning"></i>
+                                <span class="title">Defects List</span>
+                                <span class="arrow "></span>
+                            </a>
+
+                               <ul class="nast-ul">
+                              <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i>Defects list-1</a></li>
+                              <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i>Defects list-2</a></li>
+                              <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i>Defects list-3</a></li>
+                              <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i>Defects list-4</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#">
+                                <i class="fa fa-eye"></i>
+                                <span class="title">Order List</span>
+                                <span class="arrow "></span>
+                            </a>
+
+                             <ul class="nast-ul">
+                              <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i>Order list-1</a></li>
+                              <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i>Order list-2</a></li>
+                              <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i>Order list-3</a></li>
+                              <li><a href="#"><i class="fa fa-caret-down" aria-hidden="true"></i>Order list-4</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="">
+                            <a href="http://localhost:59285/Defect/PurchaseOrderList">
+                                <i class="fa fa-question"></i>
+                                <span class="title">Purchase Order Requisition</span>
+                                <span class="arrow"></span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="http://localhost:59285/Material/UploadMaterialList">
+                                <i class="fa fa-lock"></i>
+                                <span class="title">Upload Material List</span>
+                                <span class="arrow "></span>
+                            </a>
+
+                        </li>
+
+                        <li class="">
+                            <a href="http://localhost:59285/Material/MaterialReview">
+                                <i class="fa fa-eye"></i>
+                                <span class="title">Review Material List</span>
+                                <span class="arrow "></span>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                    <!-- END SIDEBAR MENU -->
+                </div>
+            </div>
+            <!-- END SIDEBAR -->
+            <!-- BEGIN CONTENT -->
+
+
+
+<link rel="stylesheet" href="GDIDProject_files/jquery-ui.css">
+<script src="GDIDProject_files/jquery-1.js"></script>
+<script src="GDIDProject_files/jquery-ui.js"></script>
+
+<script>
+
+    function setBlankQuantity(){
+        document.getElementById("txtQty").value = "";
+        var str = document.getElementById("ddlCategory").value;
+        document.getElementById("ddlItemId").value = str;
+        return true;
+    }
+
+    function setTextVal(objId,ObjValue) {
+        //alert(objId); alert(ObjValue);
+        document.getElementById("txtQty").value = ObjValue;
+        document.getElementById("materialID").value = objId;
+
+        return true;
+    }
+
+    function setRemoveVal(objId) {
+        document.getElementById("RemoveItemId").value = objId;
+        document.getElementById("txtQty").value = "";
+        return true;
+    }
+
+    $(document).ready(function () {
+        document.getElementById("RemoveItemId").value = "";
+    });
+</script>
+
+<div class="page-content-wrapper">
+    <div class="page-content" style="min-height:650px">
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <i class="fa fa-home"></i>
+                    <a href="http://localhost:59285/Home/Index">Home</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <i class="fa"></i>
+                    <a href="http://localhost:59285/Defect/DefectList">Defect List</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <i class="fa"></i>
+                    <a href="#">Material Assignment </a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+
+            </ul>
+        </div>
+        <div style="color:#4b7dd8; padding: 0px 0px 10px 0px; font-size:16px; font-weight:bold;">Material Assignment (Defect Number:13)</div>
+        <div style="padding-top:10px;"></div>
+        <div class="search-bar">
+<form action="/Material/MaterialAssignment/13" method="get"><label style="color:blue; font-size:15px; padding: 0px 3px; font-weight:600;" for="Select_Category:_">Select Category: </label><select class="dropdown1" id="ddlCategory" name="ddlCategory" style="width:265px;"><option value="193">Abrasives</option>
+<option value="194">Additives</option>
+<option value="195">Adhesives + Solvents Special Orders</option>
+<option selected="selected" value="196">Aerosols</option>
+<option value="197">Aggregates</option>
+<option value="198">Alluminium Sections</option>
+<option value="199">Arts and Crafts</option>
+<option value="200">Automotive Cleaning</option>
+<option value="201">Automotive Electrical</option>
+<option value="202">Automotive Spares &amp; Access</option>
+<option value="203">Basin and Cabinet Sets</option>
+<option value="204">Basins &amp; Pedestals</option>
+<option value="205">Bath Mixers</option>
+<option value="206">BATHROOM ACCESSORIES</option>
+<option value="207">Baths</option>
+<option value="208">Batteries</option>
+<option value="209">Boards &amp; Sheeting Special Orders</option>
+<option value="210">Bricks</option>
+<option value="211">Building Formed</option>
+<option value="212">Building Products Special Orders</option>
+<option value="213">Building Tools + Access</option>
+<option value="214">CABINETS</option>
+<option value="215">Carpet Tiles</option>
+<option value="216">Carpets</option>
+<option value="217">Ceilings</option>
+<option value="218">Cement</option>
+<option value="219">Cement Special Orders</option>
+<option value="220">Ceramic Tiles</option>
+<option value="221">Chipboard</option>
+<option value="222">Chipboard Shelving</option>
+<option value="223">Circuit Breakers &amp; Boards</option>
+<option value="224">Cooler Boxes</option>
+<option value="225">Copper Pipe + Fitting</option>
+<option value="226">Cut to Measure</option>
+<option value="227">Cutting tools</option>
+<option value="228">DIY Power Tools</option>
+<option value="229">DIY Shelving</option>
+<option value="230">Do No Use</option>
+<option value="231">Do Not Use</option>
+<option value="232">Door Handles</option>
+<option value="233">Doormats</option>
+<option value="234">Doors</option>
+<option value="235">Electical Solar</option>
+<option value="236">Electrical PVC+Fittings</option>
+<option value="237">Electrical Special Orders</option>
+<option value="238">Enamel</option>
+<option value="239">Extention Reels</option>
+<option value="240">Extractor Fans &amp; Accessories</option>
+<option value="241">Facias and barge boards</option>
+<option value="242">Fasteners</option>
+<option value="243">Fencing Special Orders</option>
+<option value="244">Fiberglass</option>
+<option value="245">Files</option>
+<option value="246">Floor Boards</option>
+<option value="247">Floor Paint</option>
+<option value="248">Flooring Accessories</option>
+<option value="249">FLOORING SPECIAL ORDERS</option>
+<option value="250">Frames</option>
+<option value="251">Galv Fencing</option>
+<option value="252">Galvanised Pipe + Fitting</option>
+<option value="253">Gas</option>
+<option value="254">Geysers + Accessories</option>
+<option value="255">Glass</option>
+<option value="256">Glass Special Orders</option>
+<option value="257">Glazed Porcelain Tiles</option>
+<option value="258">Globes</option>
+<option value="259">Gloves</option>
+<option value="260">Glues</option>
+<option value="261">Gumpoles</option>
+<option value="262">Hand Tools</option>
+<option value="263">Hardhats Masks Goggles Muffs</option>
+<option value="264">Home Cleaning + Access</option>
+<option value="265">Home Storage Solutions</option>
+<option value="266">Indoor</option>
+<option value="267">Industrial Power Tools</option>
+<option value="268">Ironmongery</option>
+<option value="269">Ladders</option>
+<option value="270">Lam Shelving</option>
+<option value="271">Laminated Boards</option>
+<option value="272">LIGHTING SPECIAL ORDERS</option>
+<option value="273">Listellos</option>
+<option value="274">Locks</option>
+<option value="275">Machine Accessories</option>
+<option value="276">Machinery</option>
+<option value="277">MACINE ACCESSORIES SPECIAL ORDERS</option>
+<option value="278">MANHOLE COVERS</option>
+<option value="279">Masonite</option>
+<option value="280">Measuring tools + Access</option>
+<option value="281">Mechanics Tools</option>
+<option value="283">Melamine</option>
+<option value="284">Melamine Shelving</option>
+<option value="285">Meranti Mould</option>
+<option value="286">Metal Sections Special Orders</option>
+<option value="287">Mosaic</option>
+<option value="288">Mouldings Special Orders</option>
+<option value="289">Natural Stone Tiles</option>
+<option value="290">Openings Special Orders</option>
+<option value="401">Other</option>
+<option value="291">Outdoor</option>
+<option value="292">Outdoor Gas</option>
+<option value="293">Overalls</option>
+<option value="294">Paint &amp; Allied Special Orders</option>
+<option value="295">Paint Accessories</option>
+<option value="296">Paint Accessories Special Orders</option>
+<option value="297">Paint Brushes</option>
+<option value="298">Paint Rollers</option>
+<option value="299">Paint Techniques</option>
+<option value="300">Pallisade Fencing</option>
+<option value="301">PAR</option>
+<option value="302">Pegboard</option>
+<option value="303">Pine Mould</option>
+<option value="304">PLASTIC</option>
+<option value="305">Plastic Pipes and Fittings</option>
+<option value="306">Plastic Sheeting</option>
+<option value="307">Plastic Ware</option>
+<option value="308">Plugs &amp; Switches</option>
+<option value="309">Plumbing Accessories</option>
+<option value="310">Plywood</option>
+<option value="311">Polish Porcelain Tiles</option>
+<option value="312">Polystyrene</option>
+<option value="313">Portable</option>
+<option value="314">Power Tool Accessories</option>
+<option value="315">POWER TOOLS SPECIAL ORDERS</option>
+<option value="316">Preparation</option>
+<option value="317">Protective Wear</option>
+<option value="318">Putty &amp; Fillers</option>
+<option value="319">PVA</option>
+<option value="320">PVC MOULD</option>
+<option value="321">Pvc Pipes + Fittings</option>
+<option value="322">PVC Wire</option>
+<option value="323">Rain suit</option>
+<option value="324">Rainwater Goods</option>
+<option value="325">Rainwater goods and Water Storage</option>
+<option value="326">Reinforcing</option>
+<option value="327">Roof Insulation</option>
+<option value="328">Roof Paint</option>
+<option value="329">Roof Sheeting</option>
+<option value="330">Roof tiles</option>
+<option value="331">Roofing Special Orders</option>
+<option value="332">Rugs</option>
+<option value="333">SABS Structural</option>
+<option value="334">Safety shoes &amp; Gumboots</option>
+<option value="335">Sanware Accessories</option>
+<option value="336">Security</option>
+<option value="337">Shelving</option>
+<option value="338">Shelving Special Orders</option>
+<option value="339">Shower Bases</option>
+<option value="340">Shower Doors</option>
+<option value="341">Shower Roses &amp; Accessories</option>
+<option value="342">Shutterboard</option>
+<option value="343">Silicones</option>
+<option value="344">Sinks</option>
+<option value="345">Soft Wood Mould</option>
+<option value="346">Softboard</option>
+<option value="347">Solar Geysers</option>
+<option value="348">Soldering and Electrical</option>
+<option value="349">Solvents</option>
+<option value="350">Spa's</option>
+<option value="351">Speciality</option>
+<option value="352">Stationary Tools</option>
+<option value="353">Steel Sections</option>
+<option value="354">Supawood</option>
+<option value="355">Tap Accessories</option>
+<option value="356">Tapes + Seal Strips</option>
+<option value="357">Tile Additives</option>
+<option value="358">Tile Adhesives</option>
+<option value="359">Tile Grouts</option>
+<option value="360">Tile Installation</option>
+<option value="361">Tile Trims</option>
+<option value="362">Tiling Tools</option>
+<option value="363">Timber Special Orders</option>
+<option value="364">Tinting</option>
+<option value="365">Toilet Accessories</option>
+<option value="366">Toilet Seats</option>
+<option value="367">Toilets &amp; cisterns &amp; Bidet</option>
+<option value="368">Tool Storage</option>
+<option value="369">TOOLS SPECIAL ORDERS</option>
+<option value="370">Torches</option>
+<option value="371">Traps</option>
+<option value="372">Trestles</option>
+<option value="373">Trolleys</option>
+<option value="374">Troughs</option>
+<option value="375">TRUSSES</option>
+<option value="376">TRUSSES SPECIAL ORDERS</option>
+<option value="377">TV Telephone Surge</option>
+<option value="402">Uncategorized</option>
+<option value="378">Under Floor Heating</option>
+<option value="282">Vinyl Tiles</option>
+<option value="379">Wall Coverings</option>
+<option value="380">Wall to Wall Carpets</option>
+<option value="381">Washing lines</option>
+<option value="382">Wastes</option>
+<option value="383">Water Cooling and Water Purifying</option>
+<option value="384">Waterproofing</option>
+<option value="385">Wet Trade Special Orders</option>
+<option value="386">Wheelbarrows</option>
+<option value="387">Windows</option>
+<option value="388">Wooden Flooring</option>
+<option value="389">Wooden Utensils</option>
+<option value="390">Woodfinish</option>
+<option value="391">Worktops</option>
+<option value="392">XXX Structural</option>
+</select>
+ <span style="color:blue; font-size:15px; font-weight:600;">Search Material :</span>
+<input id="txtMaterial" style="width:100%; padding:5px;" name="txtMaterial" value="SPRAYMATE TIN ENAMEL RICH PALE 250ML GLD" type="text">
+  <input value="Search" style="padding:7px 30px;" class="btn btn-success" onclick="javascript:return setBlankQuantity();" type="submit">
+<input id="txtQty" name="txtQty" value="3" type="hidden"><input id="materialID" name="materialID" value="362" type="hidden"><input id="RemoveItemId" name="RemoveItemId" value="" type="hidden"><input id="ddlItemId" name="ddlItemId" value="196" type="hidden">                <div id="materialreview-grid" class="grid-view">
+                    <div style="color:blue; padding: 0px 0px 10px 0px; font-size:16px; font-weight:bold;">Search Result</div>
+                    <div id="defect-grid" class="grid-view">
+
+                        <table id='table1' class="items table" style="table-layout:fixed; width:100%">
+                            <thead>
+                                <tr>
+                                    <th style="background-color:#2e6e9e; color:white; width:25%;">Material Description</th>
+                                    <th style="background-color:#2e6e9e; color:white; width:20%;">Material Category</th>
+                                    <th style="background-color:#2e6e9e; color:white; width:20%;">Barcode</th>
+                                    <th style="background-color:#2e6e9e; color:white; width:15%;">Quantity</th>
+                                    <th style="background-color:#2e6e9e; color:white; width:20%;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="add-item">
+                                    <tr>
+                                        <td id="col1">SPRAYMATE TIN ENAMEL RICH PALE 250ML GLD</td>
+                                        <td id="col2">Aerosols</td>
+                                        <td id="col3">13606</td>
+                                        <td><input id="362" class="quantity-sec" onchange="javascript:return setTextVal(this.id,this.value)" type="text"></td>
+                                        <td id="col5"> <input type="button" id="btnAddMaterial" onclick="calculate()" style="padding:0px 32px" class="btn btn-success" value="Add"/></td>
+
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="color:blue; padding: 10px 0px 10px 0px; font-size:16px;  font-weight:bold;">Add Material List</div>
+                    <div id="material-grid" class="grid-view">
+
+                        <table class="items table" style="table-layout:fixed; width:100%">
+                            <thead>
+                                <tr>
+                                    <th style="background-color:#2e6e9e; color:white; width:25%;">Material Description</th>
+                                    <th style="background-color:#2e6e9e; color:white; width:20%;">Material Category</th>
+                                    <th style="background-color:#2e6e9e; color:white; width:20%;">Barcode</th>
+                                    <th style="background-color:#2e6e9e; color:white; width:15%;">Quantity</th>
+                                    <th style="background-color:#2e6e9e; color:white; width:20%;">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="preview-item" id = "dynamic">
+                                  <tr>
+
+                                    </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-12 clear-pad" style="background-color:#f1f3fa;display:inline-block;">
+                        <div class="col-lg-3 clear-pad" style="margin-top:30px;margin-bottom:30px;"><a class="btn btn-success" defectnum="13" href="http://localhost:59285/Material/SubmitDefectForPlannerReview?MaterialList=System.Collections.Generic.HashSet%601%5BGDID.Models.MaterialViewModel%5D&amp;FileList=System.Collections.Generic.HashSet%601%5BGDID.Models.UploadMaterialFileViewModel%5D&amp;CategoryList=System.Collections.Generic.List%601%5BGDID.Models.DropdownViewModel%5D&amp;defect_id=13&amp;SelectedItemValue=196" style="width:120px;">Submit</a></div>
+                    </div>
+                </div>
+</form>        </div>
+
+    </div>
+</div>
+
+
+        </div>
+        <!-- END CONTENT -->
+        <!-- Require the footer -->
+        <div class="page-footer">
+            <div class="page-footer-inner">
+                Copyright © 2013-2017 by <a href="http://www.did.gpg.gov.za/default.aspx">Department of Infrastructure Development </a>.<br>All Rights Reserved.<br>
+            </div>
+            <div class="scroll-to-top">
+                <i class="icon-arrow-up"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="GDIDProject_files/jquery-1_002.js"></script>
+
+    <script src="GDIDProject_files/jquery-migrate-1.js"></script>
+<script src="GDIDProject_files/jquery-ui-1.js"></script>
+<script src="GDIDProject_files/gdidjs.js"></script>
+<script src="GDIDProject_files/bootstrap.js"></script>
+<script src="GDIDProject_files/respond.js"></script>
+<script src="GDIDProject_files/bootbox.js"></script>
+<script src="GDIDProject_files/bootstrap-hover-dropdown.js"></script>
+<script src="GDIDProject_files/bootstrap-noconflict.js"></script>
+<script src="GDIDProject_files/bootstrap-switch.js"></script>
+<script src="GDIDProject_files/demo.js"></script>
+<script src="GDIDProject_files/exporting.js"></script>
+<script src="GDIDProject_files/highcharts.js"></script>
+<script src="GDIDProject_files/index.js"></script>
+<script src="GDIDProject_files/jquery_009.js"></script>
+<script src="GDIDProject_files/jquery_019.js"></script>
+<script src="GDIDProject_files/jquery_013.js"></script>
+<script src="GDIDProject_files/jquery_004.js"></script>
+<script src="GDIDProject_files/jquery_002.js"></script>
+<script src="GDIDProject_files/jquery_012.js"></script>
+<script src="GDIDProject_files/jquery_014.js"></script>
+<script src="GDIDProject_files/jquery_018.js"></script>
+<script src="GDIDProject_files/jquery_005.js"></script>
+<script src="GDIDProject_files/jquery_017.js"></script>
+<script src="GDIDProject_files/jquery_016.js"></script>
+<script src="GDIDProject_files/jquery_011.js"></script>
+<script src="GDIDProject_files/jquery_003.js"></script>
+<script src="GDIDProject_files/jquery_015.js"></script>
+<script src="GDIDProject_files/jquery_020.js"></script>
+<script src="GDIDProject_files/jquery_008.js"></script>
+<script src="GDIDProject_files/jquery_007.js"></script>
+<script src="GDIDProject_files/jquery_006.js"></script>
+<script src="GDIDProject_files/jquery_010.js"></script>
+<script src="GDIDProject_files/jquery.js"></script>
+<script src="GDIDProject_files/layout.js"></script>
+<script src="GDIDProject_files/metronic.js"></script>
+<script src="GDIDProject_files/notify.js"></script>
+<script src="GDIDProject_files/tasks.js"></script>
+
+
+
+<!-- Visual Studio Browser Link -->
+<script type="application/json" id="__browserLink_initializationData">
+    {"appName":"Firefox","requestId":"946ef860a74c468a8a64fae417ca1990"}
+</script>
+<script type="text/javascript" src="GDIDProject_files/browserLink" async="async"></script>
+<!-- End Browser Link -->
+<script type="text/javascript">
+  function removefield(row)
+  {
+	var i = row.parentNode.parentNode.rowIndex;
+	document.getElementById('dynamic').deleteRow(i-1);
+  }
+$(function(){
+
+  $('li.dropdown > a').on('click',function(event){
+
+    event.preventDefault()
+
+    $(this).parent().find('ul').first().toggle(300);
+
+    $(this).parent().siblings().find('ul').hide(200);
+
+  });
+});
+</script>
+
+
+<div id="zenmate-widget" style="display: none;"><div id="message" class="">
+  <div id="plain-widget">
+    <img class="logo" src="GDIDProject_files/zenmateLogoBlack.png" srcset="resource://firefox-at-zenmate-dot-com/data/images/zenmateLogoBlack@2x.png 2x">
+    <hr>
+    <h1 id="headline">You're protected by ZenMate</h1>
+    <div id="description">Buy ZenMate Premium for only 6.49 with turbo speed for HD quality streaming!</div>
+    <button id="submit-btn">Get Premium</button>
+  </div>
+
+  <iframe id="iframe-widget" allowfullscreen="" src="" width="300" height="250" frameborder="0"></iframe>
+
+  <button id="dismiss-btn">Remind me later</button>
+</div>
+
+<div title="You're protected by ZenMate" id="toggle-btn" class="active"></div>
+</div>
+  <script type="text/javascript">
+
+
+   //initlal text box count
+/* Add and Remove Field */
+ function calculate()
+  {//debugger;
+    var val = $('#362').val();
+    var patt = new RegExp(/^\d+$/);
+
+  	if("" == $('#362').val())
+	{
+		alert('Insert a value in Text Box');
+	}
+  else if (!(patt.test(val))) {
+    alert('Please enter only numbers');
+  }
+
+
+	else  	{
+		var x = document.getElementById('dynamic').insertRow(1);
+		var c1 = x.insertCell(0);
+		var c2 = x.insertCell(1);
+		var c3 = x.insertCell(2);
+		var c4 = x.insertCell(3);
+		var c5 = x.insertCell(4);
+		c1.innerHTML = $('#col1').text();
+		c2.innerHTML = $('#col2').text();
+		c3.innerHTML = $('#col3').text();
+		c4.innerHTML = $('#362').val();
+		c5.innerHTML = '<a id="btnAddMaterial" style="padding:0px 32px" class="btn btn-success" onclick="removefield(this)">remove</a>';
+	}
+  }
+
+  </script>
+</body>
+</html>
