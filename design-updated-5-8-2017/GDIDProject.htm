@@ -613,25 +613,6 @@
 </script>
 <script type="text/javascript" src="GDIDProject_files/browserLink" async="async"></script>
 <!-- End Browser Link -->
-<script type="text/javascript">
-  function removefield(row)
-  {
-	var i = row.parentNode.parentNode.rowIndex;
-	document.getElementById('dynamic').deleteRow(i-1);
-  }
-$(function(){
-
-  $('li.dropdown > a').on('click',function(event){
-
-    event.preventDefault()
-
-    $(this).parent().find('ul').first().toggle(300);
-
-    $(this).parent().siblings().find('ul').hide(200);
-
-  });
-});
-</script>
 
 
 <div id="zenmate-widget" style="display: none;"><div id="message" class="">
@@ -652,11 +633,8 @@ $(function(){
 </div>
   <script type="text/javascript">
 
-
-   //initlal text box count
-/* Add and Remove Field */
  function calculate()
-  {//debugger;
+  {
     var val = $('#362').val();
     var patt = new RegExp(/^\d+$/);
 
@@ -684,6 +662,23 @@ $(function(){
 	}
   }
 
-  </script>
+  function removefield(row)
+  {
+	var i = row.parentNode.parentNode.rowIndex;
+	document.getElementById('dynamic').deleteRow(i-1);
+  }
+$(function(){
+
+  $('li.dropdown > a').on('click',function(event){
+
+    event.preventDefault()
+
+    $(this).parent().find('ul').first().toggle(300);
+
+    $(this).parent().siblings().find('ul').hide(200);
+
+  });
+});
+</script>
 </body>
 </html>
