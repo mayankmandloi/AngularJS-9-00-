@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Web Bhumi</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+var a  = parseInt(window.prompt("Enter your first number"));
+var b  = parseInt(window.prompt("Enter your second number"));
+var c  = parseInt(window.prompt("Enter a third number"));
+
+/*
+if(a>b)
+{
+if(a>c)
+{
+console.log("a is greatest");
+}
+else {
+console.log("c is greatest");
+}
+
+}
+else{
+if(b>c)
+{
+console.log("B is greatest");
+}
+else {
+console.log("c is greatest");
+}
+}*/
+
+
+
+if(a==b&&b==c)
+{
+  console.log("all are equal");
+}
+else
+{
+//---------------------------------------------
+  if(a==b)
+  {
+    if(a>c)
+    {
+      console.log("a and b are greatest");
+    }
+    else
+    {
+      console.log("c is greatest");
+    }
+  }
+//-------------------------------------------
+
+  if(a==c)
+  {
+    if(a>b)
+    {
+      console.log("a and c are greatest");
+    }
+    else
+    {
+      console.log("b is greatest");
+    }
+  }
+
+  //-------------------------------------------
+
+  if(c==b)
+  {
+    if(a>b)
+    {
+      console.log("c and b are greatest");
+    }
+    else {
+      console.log("a is greatest");
+    }
+  }
+
+  //-------------------------------------------
+
+}
+
+  if(a>b&&a>c)
+  {
+    console.log("a is greatest");
+  }
+  else {
+    if(b>c&&b>a)
+    {
+      console.log("b is greatest");
+    }
+    else {
+      if(c>a&&c>b)
+      console.log("c is greatest");
+    }
+  }
+
+
+</script>
+</html>
