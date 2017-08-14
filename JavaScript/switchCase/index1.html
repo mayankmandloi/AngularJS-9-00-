@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+var symbol = window.prompt("Enter symbol");
+var val1 = 1*window.prompt("Enter a number");
+var val2 = 1*window.prompt("Enter second number");
+/*
+if(symbol=='+')
+{
+  console.log(val1+val2);
+
+}
+if(symbol=="-")
+{
+  console.log(val1-val2);
+}
+if(symbol=="*")
+{
+  console.log(val1*val2);
+}
+if(symbol=="/")
+{
+  console.log(val1/val2);
+}
+*/
+
+switch (symbol) {
+  case '+':
+  case 'add'://symbol=='add'
+  case 'ADD':
+  case 'Add':
+  console.log(val1+val2);
+  break;
+  case '-':
+  console.log(val1-val2);
+  break;
+  case '/':
+  console.log(val1/val2);
+  break;
+  case '*':
+  console.log(val1*val2);
+  break;
+  default:
+  console.log("sorry try again");
+  location.reload();
+}
+
+
+
+
+
+
+
+
+</script>
+</html>

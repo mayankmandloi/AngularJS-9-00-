@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Bhumi</title>
+  </head>
+  <body>
+  <form>
+    <input type="text" name="" value="" id="name"><br>
+    <input type="email" name="" value="" id="mail"><br>
+    <input type="number" name="" value="" id="RollNumber"><br>
+    <input type="date" name="" value="" id="dob">
+    <button type="button" name="button" onclick="changeData()">Click for Table</button>
+  </form>
+  <table id="tab" style="display:none">
+        <tr>
+          <th>Name</th>
+          <th>Mail</th>
+          <th>Roll Number</th>
+          <th>Date Of Birth</th>
+        </tr>
+        <tr>
+          <th id="name1"></th>
+          <th id="mail1"></th>
+          <th id="RollNumber1"></th>
+          <th id="dob1"></th>
+        </tr>
+  </table>
+  </body>
+<script type="text/javascript">
+  function changeData()
+  {
+    document.getElementById("tab").style.display="block";
+    document.getElementById("name1").innerHTML=document.getElementById("name").value;
+    document.getElementById("mail1").innerHTML=document.getElementById("mail").value;
+    document.getElementById("RollNumber1").innerHTML=document.getElementById("RollNumber").value;
+    document.getElementById("dob1").innerHTML=document.getElementById("dob").value;
+
+  }
+</script>
+
+
+
+</html>
