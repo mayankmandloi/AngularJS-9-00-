@@ -1,1 +1,22 @@
-2345
+    1  sudo apt-get update
+    2  shubham@123
+    3  sudo apt-get update
+    4  whereis java
+    5  whereis javac
+    6  sudo -i
+    7  sudo apt-get install sublime-text
+    8  sudo-i
+    9  sudo apt-get install sublime-text
+   10  sudo apt-get install gimp
+   11  chmod 777 html
+   12  sudo chmod 777 html
+   13  sudo chmod 777 -R html
+   14  git pull
+   15  git add *
+   16  git commit -m "."
+   17  git config --global user.email "snirmal763@gmail.com"
+   18  git config --global user.name "niral"
+   19  git commit -m "."
+   20  git push
+   21  cd Shubham/
+   22  history>test.text 
