@@ -1,7 +1,5 @@
 var book = [
-    {"ID":947185260
-
-    ,"Title":"Head First PHP & MySQL"
+    {"ID":947185260,"Title":"Head First PHP & MySQL"
 
     ,"Description":"If you're ready to create web pages more complex than what you can build with HTML and CSS, Head First PHP & MySQL is the ultimate learning guide to building dynamic, database-driven websites using PHP and MySQL. Packed with real-world examples, this ..."
 
