@@ -4,11 +4,22 @@
     <meta charset="utf-8">
     <title></title>
     <script src="book.js" charset="utf-8"></script>
+<link rel="stylesheet" href="bootstrap.css">
   </head>
   <body>
+    <div class="" id="main">
 
+    </div>
   </body>
 <script type="text/javascript">
-  document.write(book);
+//for(var index=0;index<book.length;index++)
+for(var index in book)
+  {
+      var imageElement = document.createElement("img");
+      imageElement.src=book[index].Image;
+      imageElement.className="col-xs-6 img img-responsive";
+      document.getElementById("main").appendChild(imageElement);
+
+}
 </script>
 </html>

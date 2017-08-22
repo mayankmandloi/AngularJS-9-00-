@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Bhumi</title>
+  </head>
+  <body onclick="testFun()">
+    <div class="nidhi-rathore">1</div>
+    <div class="nidhi-rathore">2</div>
+    <div class="nidhi-rathore">3</div>
+    <div class="nidhi-rathore">4</div>
+    <div class="nidhi-rathore">5</div>
+  </body>
+  <script type="text/javascript">
+    var eles = document.getElementsByClassName("nidhi-rathore");
+    console.log(eles);
+    function testFun() {
+      var colourName=window.prompt("enter color name")
+      for(var index in eles)
+    {
+        console.log(index);
+        eles[index].style.color=colourName;
+    }
+}
+  </script>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Bhumi</title>
+<script src="studentDetails.js" charset="utf-8"></script>
+  <style media="screen">
+      #main div p
+      {
+          width: 32%;
+          float: left;
+          color: rgba(255,0,0,0.5);
+          background-color: #f9f9f9;
+          border: 1px solid black;
+          padding: 5px 4px;
+          text-align: center;
+          border-collapse: collapse;
+          margin: 1px 1px;
+      }
+      #main div p::after
+      {
+      content: "";
+      box-shadow: 14px 3px 10px 3px ;
+      display: block;
+}
+      #btn
+{
+transition: all cubic-bezier(1,-0.53,.16,1.96) 2s;
+}
+  body{
+overflow: hidden;
+height: 10000px;
+}
+  </style>
+  </head>
+  <body>
+        <button type="button" name="button" onclick="clickMe()" id="btn">Show Data</button>
+        <div class="" id="main">
+
+        </div>
+  </body>
+<script type="text/javascript">
+// //for(var i=0;i<studentDetail.length;i++)
+// for(i in studentDetail)
+// {
+//       var mainDiv = document.createElement("div");
+//       var paraName = document.createElement("p");
+//       paraName.innerHTML=studentDetail[i].name;
+//       mainDiv.appendChild(paraName);
+//       var paraNum = document.createElement("p");
+//       paraNum.innerHTML=studentDetail[i].number;
+//       mainDiv.appendChild(paraNum);
+//       var paraEmail = document.createElement("p");
+//       paraEmail.innerHTML=studentDetail[i].email;
+//       mainDiv.appendChild(paraEmail);
+//       document.getElementById("main").appendChild(mainDiv)
+// }
+
+function clickMe() {
+  //for(var i=(studentDetail.length-1);i>=0;i--) // for reverse traverse
+  //for(var i=0;i<studentDetail.length;i++) // same as for in loop below
+  for(i in studentDetail)
+  {
+        var mainDiv = document.createElement("div");
+        var paraName = document.createElement("p");
+        paraName.innerHTML=studentDetail[i].name;
+        mainDiv.appendChild(paraName);
+        var paraNum = document.createElement("p");
+        paraNum.innerHTML=studentDetail[i].number;
+        mainDiv.appendChild(paraNum);
+        var paraEmail = document.createElement("p");
+        paraEmail.innerHTML=studentDetail[i].email;
+        mainDiv.appendChild(paraEmail);
+        document.getElementById("main").appendChild(mainDiv)
+  }
+    //document.getElementById("btn").disabled=true;
+    //document.getElementById("btn").style.display="none";
+    //document.getElementById("btn").style.visibility="hidden";
+    document.getElementById("btn").style.marginLeft="110%";
+
+
+}
+</script>
+</html>
