@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Bhumi</title>
+<style media="screen">
+  .slide
+{
+  height: 40vh;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: blue;
+  width: 100%;
+transition: 2s;
+}
+.main
+{
+
+  height: 40vh;
+  position: relative;
+  overflow: hidden;
+}
+</style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="slide"><h1>Lorem ipsum dolor sit amet, .</h1></div>
+      <div class="slide"><h1>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1></div>
+      <div class="slide"><h1> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h1></div>
+      <div class="slide"><h1> Ut consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</h1></div>
+      <div class="slide"><h1>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</h1></div>
+      <div class="slide"><h1>sunt in culpa qui officia deserunt mollit anim id est laborum</h1></div>
+    </div>
+  </body>
+<script type="text/javascript">
+  var eles = document.getElementsByClassName("slide");
+  var elesLength = eles.length-1;
+  for(var i=0;i<=elesLength;i++)
+{
+eles[i].style.left="100%";
+}
+index=0;
+  function sliderMover() {
+
+    eles[index].style.left="0%";
+    index++;
+    if(index>elesLength)
+    {
+      for(var i=0;i<=elesLength;i++)
+    {
+    eles[i].style.left="100%";
+    }
+    index=0;
+    console.log(index);
+}
+  }
+setInterval(function() {
+  sliderMover()
+},1000);
+
+</script>
+</html>
