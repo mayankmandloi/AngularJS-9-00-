@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
     <script src="book.js" charset="utf-8"></script>
-<link rel="stylesheet" href="bootstrap.css">
-  </head>
-  <body>
-    <div class="" id="main">
-      <button class="btn" onclick="myBook()">Click Me</button>
-    </div>
-  </body>
-<script type="text/javascript">
-function myBook(){
-  for(var i in book)
-  {
-      var bookTitle = document.createElement("div");
-      bookTitle.src=book[i].Title;
-      bookTitle.className="text-center";
-      document.getElementById("main").appendChild(bookTitle);
-}
-}
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
 
+<body>
+    <div class="" id="main">
+        <button class="btn" onclick="myBook()">Click Me</button>
+    </div>
+</body>
+<script type="text/javascript">
+function myBook() {
+    for (var i in book) {
+        var bookTitle = document.createElement("div");
+        var myname = document.createElement("p");
+        myname.innerHTML = book[i].Title;
+        bookTitle.appendChild(myname);
+        document.getElementById("main").appendChild(bookTitle);
+    }
+}
 </script>
+
 </html>
