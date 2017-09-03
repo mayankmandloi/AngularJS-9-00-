@@ -20,20 +20,27 @@
 <script type="text/javascript">
      // console.log(electricty.fields);
   for (var index=0;index<electricty.fields.length;index++){
-
+          mytr= document.createElement("tr");
         var bookTitle = document.createElement("div");
-        var myname = document.createElement("p");
-          bookTitle.appendChild(myname);
+         mytd1= document.createElement("td");
+        var myid = document.createElement("p");
+        myid.innerHTML = electricty.fields[index].id;
+        bookTitle.appendChild(myid);
 
-
+    mytd2= document.createElement("td")
         var mylabel = document.createElement("p");
-        myname.innerHTML = electricty.fields[index].id;
         mylabel.innerHTML = electricty.fields[index].label;
         bookTitle.appendChild(mylabel);
-          var type = document.createElement("p");
-        myname.innerHTML = electricty.fields[index].id;
+
+       mytd3= document.createElement("td")
+       var mytype = document.createElement("p");
         mytype.innerHTML = electricty.fields[index].type;
         bookTitle.appendChild(mytype);
+
+        mytd4= document.createElement("td") 
+         var mytype1 = document.createElement("p");
+        mytype1.innerHTML = electricty.data[index];
+        bookTitle.appendChild(mytype1);
 
         document.getElementById("main").appendChild(bookTitle);
 

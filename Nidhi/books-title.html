@@ -20,9 +20,27 @@ function myBook() {
         var myname = document.createElement("p");
         myname.innerHTML = book[i].Title;
         bookTitle.appendChild(myname);
-        document.getElementById("main").appendChild(bookTitle);
+document.getElementById("main").appendChild(bookTitle);
+
+       var bookDescription = document.createElement("div");
+        var mydesc = document.createElement("p");
+        mydesc.innerHTML = book[i].Description;
+        bookDescription.appendChild(mydesc);
+       document.getElementById("main").appendChild(bookDescription);
+      
+      var imageElement = document.createElement("img");
+      imageElement.src=book[i].Image;
+     document.getElementById("main").appendChild(imageElement);
+
+        
+       var bookisbn = document.createElement("div");
+        var myisbn = document.createElement("p");
+        myisbn.innerHTML = book[i].isbn;
+        bookisbn.appendChild(myisbn);
+       document.getElementById("main").appendChild(bookisbn);
     }
 }
 </script>
 
 </html>
+ 

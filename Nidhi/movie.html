@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+       <script src="movies1.js" charset="utf-8"></script>
+       <style type="text/css" media="screen">
+        p{
+          display: inline-block;
+          padding: 10px;
+          }
+       </style>
+
+  </head>
+  <body>
+    <div class="" id="main">
+
+    </div>
+  </body>
+<script type="text/javascript">
+     // console.log(movie);
+  for (var index=0;index<movie.length;index++){
+       
+        var moviesec = document.createElement("div");
+       
+        var myId = document.createElement("p");
+        myId.innerHTML = movie[index].Id;
+        moviesec.appendChild(myId);
+         
+  var myImdbId = document.createElement("p");
+        myImdbId.innerHTML = movie[index].ImdbId;
+        moviesec.appendChild(myImdbId);
+
+       var myot = document.createElement("p");
+        myot.innerHTML = movie[index].OriginalTitle;
+        moviesec.appendChild(myot);
+
+      
+        var myDescription = document.createElement("p");
+        myDescription.innerHTML = movie[index].Description;
+        moviesec.appendChild(myDescription);
+      
+      
+
+        document.getElementById("main").appendChild(moviesec);
+
+
+    }
+</script>
+
+</html>
