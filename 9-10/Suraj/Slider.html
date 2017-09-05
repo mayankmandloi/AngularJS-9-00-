@@ -34,22 +34,20 @@ transition: 1s;
   </body>
 <script type="text/javascript">
   var eles = document.getElementsByClassName("slide");
-  var elesLength = eles.length-1;
-  for(var i=0;i<=elesLength;i++)
+  var elesLength = eles.length;
+  for(var i=0;i<elesLength;i++)
 {
 eles[i].style.left="100%";
 }
 index=0;
   function sliderMover() {
-    eles[index].style.left="0%";
     index++;
-    if(index>elesLength)
+    if(index>elesLength)[index=1]
     {
-      for(var i=0;i<=elesLength;i++)
+      for(var i=1;i<elesLength;i++)
     {
-    eles[i].style.left="100%";
+    eles[index-1].style.left="0%";
     }
-    index=0;
     console.log(index);
 }
   }

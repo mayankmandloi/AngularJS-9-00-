@@ -9,7 +9,7 @@
   height: 40vh;
   position: absolute;
   top:0;
-  left:0;
+  left:100%;
   background-color: blue;
   width: 100%;
 transition: 1s;
@@ -33,28 +33,18 @@ transition: 1s;
     </div>
   </body>
 <script type="text/javascript">
-  var eles = document.getElementsByClassName("slide");
-  var elesLength = eles.length-1;
-  for(var i=0;i<=elesLength;i++)
-{
-eles[i].style.left="100%";
-}
-index=0;
-  function sliderMover() {
-    eles[index].style.left="0%";
-    index++;
-    if(index>elesLength)
-    {
-      for(var i=0;i<=elesLength;i++)
-    {
-    eles[i].style.left="100%";
-    }
-    index=0;
-    console.log(index);
-}
-  }
-setInterval(function() {
+  var index=0;
   sliderMover()
-},1000);
+  function sliderMover() {
+    var eles = document.getElementsByClassName("slide");
+    for(var i=0;i < eles.lenght;i++){
+    eles[i].style.left="100%";
+  }    
+   index++;
+    if(index>eles.length) {index=1}
+      eles[index-1].style.left="0%";
+      console.log(index);
+      setInterval(sliderMover,1000);
+  }
 </script>
 </html>
