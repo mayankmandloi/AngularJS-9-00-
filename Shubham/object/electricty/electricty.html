@@ -20,10 +20,10 @@ body{
 </div>
 </body>
 <script type="text/javascript">
-	for(i in electricty){
+	for(i in electricty.fields){
 	var mypresent=document.createElement("div");
 	var myfields = document.createElement("p");
-	myfields.innerHTML= electricty[i].Id;
+	myfields.innerHTML= electricty.fields[i].id;
 	mypresent.appendChild(myfields);
 	document.getElementById("wrapper").appendChild(mypresent);
 }
