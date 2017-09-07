@@ -1,0 +1,31 @@
+<html>
+<head>
+<title></title>
+<script src="Electricty.js"></script>
+<style>
+#wrapper p{
+	display: inline-block;
+	padding: 10px;
+}
+body{
+	background: rgba(0, 121, 115, 0.94);
+	color: #fff;
+}
+
+</style>
+</head> 
+<body>
+<div  class="" id="wrapper">
+	
+</div>
+</body>
+<script type="text/javascript">
+	for(i in electricty){
+	var mypresent=document.createElement("div");
+	var myfields = document.createElement("p");
+	myfields.innerHTML= electricty[i].Id;
+	mypresent.appendChild(myfields);
+	document.getElementById("wrapper").appendChild(mypresent);
+}
+</script>
+</html>
