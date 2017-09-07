@@ -41,15 +41,19 @@ eles[i].style.left="100%";
 }
 index=0;
   function sliderMover() {
-    index++;
-    if(index>elesLength)[index=1]
+    if(index<elesLength)
     {
+    eles[index].style.left="0%";
+    index++;
+    }
+    else {
       for(var i=1;i<elesLength;i++)
     {
-    eles[index-1].style.left="0%";
+    eles[i].style.left="100%";
     }
-    console.log(index);
-}
+    index=1;
+    }
+
   }
 setInterval(function() {
   sliderMover()

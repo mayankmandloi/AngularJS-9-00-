@@ -12,30 +12,18 @@
   <style type="text/css" media="screen">
    .clearfix {
       clear: both;
-    } 
+    }
     </style>
   </head>
   <body>
   	<div class="container">
       <div class="row">
-        
+
       </div>
       <button type="button" class="btn btn-primary" onclick="myFunction()">click me</button>
     </div>
   </body>
 <script type="text/javascript">
-// var parents = document.getElementsByClassName('row')
-//   for (var s=0, ii=parent.length;s<ii; s++) {
-//       var parent = parents[s]
-//           child = parent.child
-
-//       for (var d=0, dd=child.length;d<dd;dd++) {
-//           var elem = child[d]
-//           if (d%3===0){
-//             elem.classList.add(clearfix)
-//           } 
-//       }   
-//   } // document.getElementById("myBook").innerHTML += "<br>" +bookTitle;
 
   function myFunction(){
     for (var i = 0; i < book.length; i++) {
@@ -43,6 +31,7 @@
           respDiv.className="col-sm-3";
       var styleDiv = document.createElement('div');
           styleDiv.className="text-center";
+          styleDiv.style.backgroundColor="rgba("+(Math.random()*256)+","+(Math.random()*256)+","+(Math.random()*256)+","+Math.random()+")";
           respDiv.appendChild(styleDiv);
 
       document.getElementsByClassName('row')[0].appendChild(respDiv);
@@ -58,14 +47,24 @@
           disc.innerHTML=book[i].Description;
           styleDiv.appendChild(disc);
     }
-  }
- 
+    var parents = document.getElementsByClassName('row')
+
+          var parent = parents[0].getElementsByClassName("col-sm-3");
+
+          for (var d=0;d<parent.length;d++) {
+              if (d%4==0){
+                parent[d].className +=" clearfix";
+              }
+          }
+      } // document.getElementById("myBook").innerHTML += "<br>" +bookTitle;
+
+
 </script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   $(document).ready(function(){
     $('.btn-primary').click(function(){
       $('.col-sm-3:nth-child(4n+5)').addClass('clearfix');
     })
   })
-</script>
+</script> -->
 </html>
