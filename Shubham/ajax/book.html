@@ -5,7 +5,6 @@
     <title>Web Bhumi</title>
   </head>
   <body>
-    <input type="text" name="" value="" id="input">
     <button type="button" name="button" onclick="clickMe()">Click Me</button>
     <div class="" id="main">
 
@@ -16,7 +15,7 @@
     var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-     var book = JSON.parse(this.responseText);
+      var book = JSON.parse(this.responseText);
       book = book.Books;
       console.log(book);
       for (var i in book) {
@@ -45,8 +44,7 @@
       }
     }
   };
-    var str = "http://it-ebooks-api.info/v1/search/"+document.getElementById("input").value;
-  xhttp.open("GET", str, true);
+  xhttp.open("GET", "http://it-ebooks-api.info/v1/search/angular", true);
   xhttp.send();
   }
 </script>
