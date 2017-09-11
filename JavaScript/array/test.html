@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Web Bhumi</title>
+</head>
+<body>
+  <textarea name="name" rows="8" cols="80" id="main" placeholder="Comments" onblur="showData()"></textarea>
+  <pre id="target"></pre>
+  <script type="text/javascript">
+  // var nidhi = [1,2,3,4,5,6,7,78,8];
+  // console.log(nidhi);
+  // console.log(nidhi.pop());//take a element from last index and return it to us
+  // console.log(nidhi);
+  // nidhi.push(10);//insert element at last index
+  // console.log(nidhi);
+  // console.log(nidhi.shift());//take element
+  // console.log(nidhi);
+  // nidhi.unshift(21);
+  // console.log(nidhi);
+  </script>
+</body>
+<script type="text/javascript">
+  function showData() {
+    document.getElementById("target").innerHTML=document.getElementById("main").value;
+  }
+</script>
+</html>

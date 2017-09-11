@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="book.js" charset="utf-8"></script>
+  </head>
+  <body>
+  	<button type="button" onclick="myFunction()">click me</button>
+	<div><p  id="myBook"></p></div>
+  </body>
+<script type="text/javascript">
+  function myFunction(){
+  	for (var i = 0; i < book.length; i++) {
+  		var bookTitle = "'" + book[i].Title + "'";
+  		document.getElementById("myBook").innerHTML += bookTitle;
+  		console.log(bookTitle)
+  	}
+  }
+</script>
+</html>
