@@ -19,9 +19,9 @@
       <div class="row">
 
       </div>
-      
+
     </div>
-    
+
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog">
 
@@ -29,6 +29,10 @@
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-header-main">
+
+            </div>
+
           </div>
           <div class="modal-body" id="bodyModal">
           </div>
@@ -39,7 +43,7 @@
 
       </div>
     </div>
-	
+
 
   </body>
 <script type="text/javascript">
@@ -61,10 +65,12 @@
       var i=this.getAttribute("index");
       var movieTitle = document.createElement('h3')
           movieTitle.innerHTML=movie[i].Title;
-          document.getElementsByClassName("modal-header")[0].appendChild(movieTitle);
+         // document.getElementsByClassName("modal-header-main")[0].innerHTML="";
+          document.getElementsByClassName("modal-header-main")[0].appendChild(movieTitle);
 
       var movieDesc = document.createElement('p');
           movieDesc.innerHTML=movie[i].Description;
+         // document.getElementsByClassName('modal-body')[0].innerHTML="";
           document.getElementsByClassName('modal-body')[0].appendChild(movieDesc)
       })
 
@@ -77,7 +83,7 @@
         parent[j].className +=" clearfix";
       }
     }
-       
+
 
 </script>
 </html>

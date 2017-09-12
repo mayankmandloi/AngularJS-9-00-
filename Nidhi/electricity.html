@@ -13,43 +13,74 @@
 
   </head>
   <body>
-    <div class="" id="main">
+    <div class="">
+      <table>
+        <thead>
+          <tr>
+            <td>REGION_NM</td>
+            <td>Month</td>
+            <td>Zone</td>
+            <td>State</td>
+            <td></td>
+            <td>Fule Type</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody id="main">
 
+        </tbody>
+      </table>
     </div>
   </body>
 <script type="text/javascript">
-     // console.log(electricty.fields);
-  for (var index=0;index<electricty.fields.length;index++){
-          // mytr= document.createElement("tr");
-        var bookTitle = document.createElement("tr");
-         mytd1= document.createElement("td");
-        // var myid = document.createElement("p");
-        mytd1.innerHTML = electricty.fields[index].id;
-        bookTitle.appendChild(mytd1);
+//      // console.log(electricty.fields);
+//   for (var index=0;index<electricty.fields.length;index++){
+//           // mytr= document.createElement("tr");
+//         var bookTitle = document.createElement("tr");
+//          mytd1= document.createElement("td");
+//         // var myid = document.createElement("p");
+//         mytd1.innerHTML = electricty.fields[index].id;
+//         bookTitle.appendChild(mytd1);
+//
+//     mytd2= document.createElement("td")
+//         // var mylabel = document.createElement("p");
+//         mytd2.innerHTML = electricty.fields[index].label;
+//         bookTitle.appendChild(mytd2);
+//
+//        mytd3= document.createElement("td")
+//        // var mytype = document.createElement("p");
+//         mytd3.innerHTML = electricty.fields[index].type;
+//         bookTitle.appendChild(mytd3);
+//
+//  for (var index1=0;index1<electricty.data.length;index1++){
+//          mytd4= document.createElement("td")
+//          // var mytype1 = document.createElement("p");
+//         mytd4.innerHTML = electricty.data[index1];
+//         bookTitle.appendChild(mytd4);
+//         document.getElementById("main").appendChild(bookTitle)
+//      }
+//
+//
+// ;
+//
+//
+//     }
 
-    mytd2= document.createElement("td")
-        // var mylabel = document.createElement("p");
-        mytd2.innerHTML = electricty.fields[index].label;
-        bookTitle.appendChild(mytd2);
-
-       mytd3= document.createElement("td")
-       // var mytype = document.createElement("p");
-        mytd3.innerHTML = electricty.fields[index].type;
-        bookTitle.appendChild(mytd3);
-
- for (var index=0;index<electricty.data.length;index++){
-         mytd4= document.createElement("td")
-         // var mytype1 = document.createElement("p");
-        mytd4.innerHTML = electricty.data[index];
-        bookTitle.appendChild(mytd4);
-     }
-
-
-        document.getElementById("main").appendChild(bookTitle);
-
-
-    }
-
+for (var index1=0;index1<electricty.data.length;index1++){
+  var rowTable=document.createElement("tr");
+  for(var secondIndex=0;secondIndex<electricty.data[index1].length;secondIndex++){
+  mytd4= document.createElement("td")
+  // var mytype1 = document.createElement("p");
+  mytd4.innerHTML = electricty.data[index1][secondIndex];
+  rowTable.appendChild(mytd4);
+}
+document.getElementById("main").appendChild(rowTable)
+}
 </script>
 
 </html>

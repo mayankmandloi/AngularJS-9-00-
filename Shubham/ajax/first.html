@@ -36,12 +36,12 @@ function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
+    var results = JSON.parse(this.responseText).result;
+
     }
   };
-  xhttp.open("GET", "http://it-ebooks-api.info/v1/search/php", true);
-  //xhttp.open("GET", "http://codeforces.com/api/blogEntry.comments?blogEntryId=79", true);
+  //xhttp.open("GET", "http://it-ebooks-api.info/v1/search/php", true);
+  xhttp.open("GET", "http://codeforces.com/api/blogEntry.comments?blogEntryId=79", true);
   xhttp.send();
 }
 </script>
