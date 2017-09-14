@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script src="book.js" charset="utf-8"></script>
+    <style type="text/css">
+#wrapper p{
+  display: inline-block;
+  padding: 10px;
+}
+body{
+  background: rgba(0, 121, 115, 0.94);
+  color: #fff;
+}
+    </style>
+  </head>
+  <body>
+    <div class="" id="wrapper">
+
+    </div>
+  </body>
+<script type="text/javascript">
+for(var p in book)
+  {
+    var myelem= document.createElement("div");
+    var mybook = document.createElement("p");
+        mybook.innerHTML=book[p].ID;
+        myelem.appendChild(mybook);
+
+    var mytitle=document.createElement("p");
+    mytitle.innerHTML=book[p].Title;
+    myelem.appendChild(mytitle);
+
+    var des=document.createElement("p");
+    des.innerHTML=book[p].Description;
+    myelem.appendChild(des);
+
+    var is =document.createElement("p");
+    is.innerHTML=book[p].isbn;
+    myelem.appendChild(is);
+
+    var image = document.createElement("img");
+      image.src=book[p].Image;
+
+    document.getElementById("wrapper").appendChild(myelem);
+
+
+}
+</script>
+</html>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

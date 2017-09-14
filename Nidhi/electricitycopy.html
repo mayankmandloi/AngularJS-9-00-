@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+       <script src="electricty.js" charset="utf-8"></script>
+       <style type="text/css" media="screen">
+        td{
+          padding: 10px;
+          border : 1px solid;
+          }
+       </style>
+
+  </head>
+  <body>
+    <div class="" id="main">
+
+    </div>
+  </body>
+<script type="text/javascript">
+     // console.log(electricty.fields);
+
+ for (var index=0;index<electricty.data.length;index++){
+  var bookTitle = document.createElement("tr");
+         mytd4= document.createElement("td")
+         // var mytype1 = document.createElement("p");
+        mytd4.innerHTML = electricty.data[index];
+        bookTitle.appendChild(mytd4);
+
+
+
+        document.getElementById("main").appendChild(bookTitle);
+
+
+    }
+
+</script>
+
+</html>

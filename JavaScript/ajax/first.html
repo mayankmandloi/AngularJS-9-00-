@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Bhumi</title>
+  </head>
+  <body>
+
+  </body>
+<script type="text/javascript">
+var i=0;
+var j=0;
+setInterval(function () {
+    console.log(++i +" I am i");
+  },1000);
+
+  setInterval(function () {
+      console.log(j++ +" I am j");
+    },1000);
+window.alert("I am a alert");
+window.alert("I am second alert");
+document.write("I am to document");
+</script>
+</html> -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "http://it-ebooks-api.info/v1/search/php", true);
+  //xhttp.open("GET", "http://codeforces.com/api/blogEntry.comments?blogEntryId=79", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>

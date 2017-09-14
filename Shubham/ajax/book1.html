@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Bhumi</title>
+  </head>
+  <body>
+    <input type="text" name="" value="" id="input">
+    <button type="button" name="button" onclick="clickMe()">Click Me</button>
+    <div class="" id="main">
+
+    </div>
+  </body>
+<script type="text/javascript">
+  function clickMe() {
+    var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     var book = JSON.parse(this.responseText);
+      book = book.Books;
+      console.log(book);
+      for (var i in book) {
+          var bookTitle = document.createElement("div");
+          var myname = document.createElement("p");
+          myname.innerHTML = book[i].Title;
+          bookTitle.appendChild(myname);
+  document.getElementById("main").appendChild(bookTitle);
+
+         var bookDescription = document.createElement("div");
+          var mydesc = document.createElement("p");
+          mydesc.innerHTML = book[i].Description;
+          bookDescription.appendChild(mydesc);
+         document.getElementById("main").appendChild(bookDescription);
+
+        var imageElement = document.createElement("img");
+        imageElement.src=book[i].Image;
+       document.getElementById("main").appendChild(imageElement);
+
+
+         var bookisbn = document.createElement("div");
+          var myisbn = document.createElement("p");
+          myisbn.innerHTML = book[i].isbn;
+          bookisbn.appendChild(myisbn);
+         document.getElementById("main").appendChild(bookisbn);
+      }
+    }
+  };
+    var str = "http://it-ebooks-api.info/v1/search/"+document.getElementById("input").value;
+  xhttp.open("GET", str, true);
+  xhttp.send();
+  }
+</script>
+</html>
