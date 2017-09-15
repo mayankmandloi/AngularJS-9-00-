@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AJAX Test</title>
+    <script src="files/jquery.js" type="text/javascript"></script>
+    <script src="files/bootstrap.js" type="text/javascript"></script>
+    <script src="files/wow.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="files/bootstrap.css">
+    <link rel="stylesheet" href="files/animate.css">
+
+  </head>
+  <body>
+
+    <button type="button" onclick="loadDoc()">Hit Me</button>
+    <div id="main">
+    <h2>The XMLHttpRequest Object</h2>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+  var a;
+  function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        a = this.responseText;
+        a = JSON.parse(a);
+        a = a.result;
+        tt();
+      }
+    };
+    xhttp.open("GET", "http://codeforces.com/api/blogEntry.comments?blogEntryId=79", true);
+    xhttp.send();
+  }
+function tt() {
+  for (var i = 0; i < a.length; i++) {
+    console.log(a[i]);
+      var d = document.createElement("d");
+
+      var p1 = document.createElement("p");
+
+       p1.innerHTML = "ID :- "+ a[i].id;
+       p1.innerHTML +="<br>"+"Name :-"+ a[i].commentatorHandle;
+       p1.innerHTML +="<br>"+"Data :-"+ a[i].text;
+       p1.style.border = "2px solid black";
+       p1.style.backgroundColor = "tan";
+
+       d.appendChild(p1);
+
+
+
+
+       document.getElementById("main").appendChild(d);
+      }
+
+}
+
+
+
+  </script>
+
+
+</html>
