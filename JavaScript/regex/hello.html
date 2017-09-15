@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Web Bhumi</title>
+</head>
+<body>
+  <textarea name="name" rows="8" cols="80" id="input"></textarea>
+  <button type="button" name="button" onclick="check()">Click me</button>
+</body>
+
+<script type="text/javascript">
+function check() {
+  var input = document.getElementById("input").value;
+  var start = input.search(/([a-z0-9_]+[.]?)+[@][a-z]+([.][a-z]{2,3})+/);
+  console.log(start);
+  var end=input.indexOf(" ",start);
+  console.log(end);
+
+  var email = input.slice(start,end);
+  console.log(email);
+}
+</script>
+</html>
+
+<!--
+www.regex101.com
+-->

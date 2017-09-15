@@ -24,6 +24,27 @@ document.write("I am to document");
 </html> -->
 <!DOCTYPE html>
 <html>
+<head>
+<style media="screen">
+  p
+{
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 3px 3px 3px 3px grey;
+}
+p p
+{
+  border:0px solid black;
+  box-shadow: 0px;
+}
+p div::after,p p::after{
+  content: "";
+  display: block;
+  border-bottom:1px solid black;
+}
+</style>
+</head>
 <body>
 
 <div id="demo">
@@ -38,6 +59,13 @@ function loadDoc() {
     if (this.readyState == 4 && this.status == 200) {
     var results = JSON.parse(this.responseText).result;
     console.log(results);
+    for(i=0;i<results.length;i++){
+    var para = document.createElement("p");
+    para.innerHTML=results[i].text;
+    para.innerHTML+="<br>"+results[i].commentatorHandle;
+    document.getElementById("demo").appendChild(para);
+}
+
     }
   };
   //xhttp.open("GET", "http://it-ebooks-api.info/v1/search/php", true);
