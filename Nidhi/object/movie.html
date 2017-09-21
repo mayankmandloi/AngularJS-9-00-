@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+       <script src="movies1.js" charset="utf-8"></script>
+       <style type="text/css" media="screen">
+        p{
+          display: inline-block;
+          padding: 10px;
+          }
+       </style>
+
+  </head>
+  <body>
+  <div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 id="mtitle" class="modal-title">Modal Header</h4>
+        </div>
+        <div id="mbody" class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+    <div class="" id="main">
+
+    </div>
+  </body>
+<script type="text/javascript">
+     // console.log(movie);
+  for(i=0;i<movie.length;i++){
+
+
+        var myId = document.createElement("p");
+        myId.innerHTML = movie[i].Title;
+        myId.setAttribute("data-toggle","modal");
+        myId.setAttribute("data-target","#myModal");
+  myId.setAttribute("index",i);
+        myId.addEventListener("click",function(){
+           var i=this.getAttribute("index");
+          document.getElementById("mtitle").innerHTML=movie[i].Title;
+          document.getElementById("mbody").innerHTML=movie[i].Description;
+
+        });
+        
+  //       moviesec.appendChild(myId);
+
+  // var myImdbId = document.createElement("p");
+  //       myImdbId.innerHTML = movie[index].ImdbId;
+  //       moviesec.appendChild(myImdbId);
+
+  //      var myot = document.createElement("p");
+  //       myot.innerHTML = movie[index].OriginalTitle;
+  //       moviesec.appendChild(myot);
+
+
+  //       var myDescription = document.createElement("p");
+  //       myDescription.innerHTML = movie[index].Description;
+  //       moviesec.appendChild(myDescription);
+
+
+
+        document.getElementById("main").appendChild(myId);
+
+
+    }
+</script>
+
+</html>
+
+
+<!-- movie.html:1 Slow network is detected. Fallback font will be used while loading: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2
+movie.html:1 Slow network is detected. Fallback font will be used while loading: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff
+movie.html:1 Slow network is detected. Fallback font will be used while loading: https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.ttf -->

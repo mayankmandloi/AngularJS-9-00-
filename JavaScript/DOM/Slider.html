@@ -10,9 +10,10 @@
   position: absolute;
   top:0;
   left:0;
-  background-color: blue;
+  background-color: tan;
   width: 100%;
-transition: 1s;
+transition: 2s;
+border-radius: 50px;
 }
 .main
 {
@@ -24,12 +25,12 @@ transition: 1s;
   </head>
   <body>
     <div class="main">
-      <div class="slide"><h1>Lorem ipsum dolor sit amet, .</h1></div>
-      <div class="slide"><h1>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1></div>
-      <div class="slide"><h1> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h1></div>
-      <div class="slide"><h1> Ut consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</h1></div>
-      <div class="slide"><h1>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</h1></div>
-      <div class="slide"><h1>sunt in culpa qui officia deserunt mollit anim id est laborum</h1></div>
+      <div class="slide" style="opacity:0.0"><h1>Lorem ipsum dolor sit amet, .</h1></div>
+      <div class="slide" style="opacity:0.2"><h1>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1></div>
+      <div class="slide" style="opacity:0.4"><h1> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</h1></div>
+      <div class="slide" style="opacity:0.6"><h1> Ut consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</h1></div>
+      <div class="slide" style="opacity:0.8"><h1>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident</h1></div>
+      <div class="slide" style="opacity:1.0"><h1>sunt in culpa qui officia deserunt mollit anim id est laborum</h1></div>
     </div>
   </body>
 <script type="text/javascript">
@@ -55,6 +56,11 @@ index=0;
   }
 setInterval(function() {
   sliderMover()
+<<<<<<< HEAD
+},2000);
+
+=======
 },1000);
+>>>>>>> cf4ed236815da4695ef1bc84184c3955f0dc8006
 </script>
 </html>
