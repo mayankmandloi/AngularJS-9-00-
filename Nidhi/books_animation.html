@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="book.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+ <button class="btn" onclick="myBook()">Click Me</button>
+
+    <div class="" id="main">
+    </div>
+</body>
+<script type="text/javascript">
+function myBook() {
+    for (var i in book) {
+        var bookTitle = document.createElement("div");
+        bookTitle.className=("col-sm-4");
+        var myname = document.createElement("h4");
+        myname.innerHTML = book[i].Title;
+        bookTitle.appendChild(myname);
+
+
+
+        var mydesc = document.createElement("p");
+        mydesc.innerHTML = book[i].Description;
+        bookTitle.appendChild(mydesc);
+
+      var imageElement = document.createElement("img");
+      imageElement.src=book[i].Image;
+   bookTitle.appendChild(imageElement);
+
+
+
+        var myisbn = document.createElement("p");
+        myisbn.innerHTML = book[i].isbn;
+        bookTitle.appendChild(myisbn);
+
+         document.getElementById("main").appendChild(bookTitle);
+
+if((i+1)%3==0){
+ var clearwhitesapce=document.createElement("div")
+ clearwhitesapce.className = ("clearfix");
+document.getElementById("main").appendChild(clearwhitesapce);
+}
+
+    }
+
+
+}
+</script>
+
+</html>
+
