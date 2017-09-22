@@ -9,38 +9,47 @@
 </head>
 
 <body>
-    <div class="" id="main">
-        <button class="btn" onclick="myBook()">Click Me</button>
+    <button class="btn" onclick="myBook()">Click Me</button>
+    <div class="row" id="main">
+
     </div>
 </body>
 <script type="text/javascript">
 function myBook() {
     for (var i in book) {
         var bookTitle = document.createElement("div");
-        var myname = document.createElement("p");
+        bookTitle.className="col-xs-4";
+
+
+
+
+        var myname = document.createElement("h3");
         myname.innerHTML = book[i].Title;
         bookTitle.appendChild(myname);
-document.getElementById("main").appendChild(bookTitle);
 
-       var bookDescription = document.createElement("div");
+
+
         var mydesc = document.createElement("p");
         mydesc.innerHTML = book[i].Description;
-        bookDescription.appendChild(mydesc);
-       document.getElementById("main").appendChild(bookDescription);
-      
+       bookTitle.appendChild(mydesc);
+
       var imageElement = document.createElement("img");
       imageElement.src=book[i].Image;
-     document.getElementById("main").appendChild(imageElement);
+     bookTitle.appendChild(imageElement);
 
-        
-       var bookisbn = document.createElement("div");
+
         var myisbn = document.createElement("p");
         myisbn.innerHTML = book[i].isbn;
-        bookisbn.appendChild(myisbn);
-       document.getElementById("main").appendChild(bookisbn);
+       bookTitle.appendChild(myisbn);
+      document.getElementById("main").appendChild(bookTitle);
+      if((i+1)%3==0)
+      {
+          var clear = document.createElement("div");
+          clear.className="clearfix mayank";
+          document.getElementById("main").appendChild(clear);
+      }
     }
 }
 </script>
 
 </html>
- 
