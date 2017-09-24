@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="book.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="" id="main">
+      <button class="btn" onclick="myBook()">Click Me</button>
+    <p id="para1">Hello I am Mayank</p>
+    </div>
+  </body>
+<script type="text/javascript">
+function myBook(){
+  for(var i in book)
+  {
+      var bookTitle = document.createElement("div");
+      document.getElementById("para1").title="I teach JS";
+      document.getElementById("para1").innerHTML=" I work at Web Bhumi";
+
+      /*bookTitle.src=book[i].Title;
+      bookTitle.className="titlesec";
+      document.getElementById("main").appendChild(bookTitle);*/
+}
+}
+
+</script>
+</html>
