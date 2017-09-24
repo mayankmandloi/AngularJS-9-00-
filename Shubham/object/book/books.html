@@ -30,8 +30,9 @@ function show(){
 for(var p in book)
   {
     var myelem= document.createElement("div");
-     myelem.setAttribute("class","col-sm-4");
-      //mtelem.setAttribute("data-aos","flip-doset);
+    myelem.setAttribute("class","col-sm-4");
+    myelem.setAttribute("data-aos","flip-doset");
+    //myelem.className=("col-sm-4");
     var mybook = document.createElement("p");
     mybook.innerHTML=book[p].ID;
     myelem.appendChild(mybook);
