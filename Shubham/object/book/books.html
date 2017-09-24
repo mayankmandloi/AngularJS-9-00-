@@ -3,13 +3,10 @@
   <head>
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="aos/aos.css">
+    <script type="text/javascript" src="aos/aos.js"></script>
     <script src="book.js" charset="utf-8"></script>
     <style type="text/css">
-/*#wrapper p{
-  display: inline-block;
-  padding: 10px;
-}*/
 body{
   background: rgba(0, 121, 115, 0.94);
   color: #fff;
@@ -33,7 +30,8 @@ function show(){
 for(var p in book)
   {
     var myelem= document.createElement("div");
-    myelem.setAttribute("class","col-sm-4");
+     myelem.setAttribute("class","col-sm-4");
+      //mtelem.setAttribute("data-aos","flip-doset);
     var mybook = document.createElement("p");
     mybook.innerHTML=book[p].ID;
     myelem.appendChild(mybook);
