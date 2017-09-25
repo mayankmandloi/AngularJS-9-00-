@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="book.js" charset="utf-8"></script>
+<link rel="stylesheet" href="bootstrap.css">
+  </head>
+  <body>
+    <div class="" id="main">
+
+    </div>
+  </body>
+<script type="text/javascript">
+//for(var index=0;index<book.length;index++)
+for(var index in book){
+  	/*  console.log(book);
+      var imageElement = document.createElement("img");
+      imageElement.src=book[index].Image;
+      imageElement.className="col-xs-6 img img-responsive";*/
+      
+      var mybook = document.createElement("div");
+      var youbook = document.createElement("p");
+      youbook.innerHTML=book[index].ID;
+      mybook.appendChild(youbook);
+
+      var mytitle=document.createElement('p');
+      mytitle.innerHTML=book[index].Title;
+      mybook.appendChild(mytitle);
+      document.getElementById("main").appendChild(mybook);
+
+}
+</script>
+</html>

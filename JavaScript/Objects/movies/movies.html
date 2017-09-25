@@ -1,0 +1,60 @@
+<html>
+<head>
+<title></title>
+<script src="movies1.js"></script>
+<style>
+#wrapper p{
+	display: inline-block;
+	padding: 10px;
+}
+body{
+	background: rgba(0, 121, 115, 0.94);
+	color: #fff;
+}
+.myshow{
+	background:#000;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	font-size: 16px;
+}
+
+</style>
+</head> 
+<body>
+<div  class="" id="wrapper">
+<button class="myshow" onclick="show()">Click</button>	
+</div>
+</body>
+<script type="text/javascript">
+
+	//for (var q= 0;q <= movie.length; q ++)
+    function show (){
+        for(q in movie)
+       {
+       	console.log(movie);
+		var mymovies = document.createElement("div");
+    	var topid = document.createElement("p");
+   		topid.innerHTML= movie[q].Id;
+     	mymovies.appendChild(topid);
+
+     	var bottom =document.createElement("p");
+     	bottom .innerHTML= movie[q].ImdbId;
+     	mymovies.appendChild(bottom );
+   		
+   		var ortitle = document.createElement("p");
+		ortitle.innerHTML= movie[q].OriginalTitle;
+		mymovies.appendChild(ortitle);
+
+		var mytitle=document.createElement("p");
+		mytitle.innerHTML=movie[q].Title;
+		mymovies.appendChild(mytitle);
+
+		var desc=document.createElement("p");
+		desc.innerHTML=movie[q].Description;
+		mymovies.appendChild(desc);
+		document.getElementById("wrapper").appendChild(mymovies);
+		}
+}
+</script>
+</html>
