@@ -4,8 +4,8 @@
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="aos/aos.css">
-    <script type="text/javascript" src="aos/aos.js"></script>
     <script src="book.js" charset="utf-8"></script>
+    <script src="aos/aos.js" charset="utf-8"></script>
     <style type="text/css">
 body{
   background: rgba(0, 121, 115, 0.94);
@@ -22,16 +22,22 @@ body{
   <body>
 <button class="click-me" onclick="show()">Click Me</button>
     <div class="" id="wrapper">
-  
+
     </div>
   </body>
+
+
+  <script>
+      AOS.init();
+    </script>
+
 <script type="text/javascript">
 function show(){
 for(var p in book)
   {
     var myelem= document.createElement("div");
     myelem.setAttribute("class","col-sm-4");
-    myelem.setAttribute("data-aos","flip-doset");
+    myelem.setAttribute("data-aos","flip-down");
     //myelem.className=("col-sm-4");
     var mybook = document.createElement("p");
     mybook.innerHTML=book[p].ID;
@@ -58,6 +64,7 @@ for(var p in book)
       shubham.setAttribute("class","clearfix");
       //shubham=appendChild.className("clearfix");
       document.getElementById("wrapper").appendChild(shubham);
+
     }
   }
 }
